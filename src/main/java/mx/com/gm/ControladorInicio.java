@@ -27,7 +27,7 @@ public class ControladorInicio {
 
         persona.setNombre("Ivan");
         persona.setApellido("Larios");
-        persona.setEmail("pedroivanlarios@gmail.com");
+        persona.setEmail("larios@gmail.com");
         persona.setTelefono("5630192627");
 
         persona2.setNombre("Edgar");
