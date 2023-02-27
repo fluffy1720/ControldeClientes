@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>mx.com.gm</groupId>
-	<artifactId>HolaMundoThymeleaf</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>HolaMundoThymeleaf</name>
+	<artifactId>ControlClientes</artifactId>
+	<version>0.0.2-SNAPSHOT</version>
+	<name>ControlClientes</name>
 	<description>Hola Mundo con Spring</description>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
