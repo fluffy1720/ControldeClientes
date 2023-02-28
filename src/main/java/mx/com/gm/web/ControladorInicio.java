@@ -5,8 +5,10 @@ import mx.com.gm.domain.Persona;
 //import mx.com.gm.dao.iPersonaDao;
 import mx.com.gm.servicio.iPersonaService;
 
+import javax.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -38,7 +40,10 @@ public class ControladorInicio {
         return "modificar";
     }
     @PostMapping("/guardar")
-    public String guardar(Persona persona){
+    public String guardar(@Valid Persona persona, Errors errores){
+        if(errores.hasErrors()){
+            return "modificar";
+        }
         personaService.guardar(persona);
         return "redirect:/";
     }

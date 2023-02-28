@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml" lang="es">
     <head>
         <title>Inicio</title>
         <meta charset="UTF-8">
     </head>
     <body>
-        <h1>Inicio</h1>
+        <header th:replace="layout/plantilla :: header"></header>
         <a th:href="@{/agregar}">Crear Persona</a>
         <div th:if="${personas != null && !personas.empty}">
         <table border="1">
@@ -30,5 +31,6 @@
         <div th:if="${personas == null || personas.empty}">
             La lista de personas está vacia
         </div>
+        <footer th:replace="layout/plantilla :: footer"></footer>
     </body>
 </html>
