@@ -12,5 +12,5 @@ public interface iPersonaService {
     public void eliminar(Persona persona);
 
     public Persona encontrarPersona(Persona persona);
-
+    
 }
