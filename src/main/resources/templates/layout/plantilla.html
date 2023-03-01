@@ -7,10 +7,16 @@
     </head>
     <body>
         <header th:fragment="header">
-            <h1>Control de Clientes</h1>
+            <h1 th:text="#{plantilla.titulo}">Titulo</h1>
         </header>
         <footer th:fragment="footer">
-            <p>Derechos Reservados <a href="https://trailblazer.me/id/pedroivanlarios" target="_blank">Pedro Ivan</a></p>
+            <div>
+                <br/>
+                <a th:href="@{/(lang=es)}">ES</a> |
+                <a th:href="@{/(lang=en)}">EN</a> |
+                <span> [[#{plantilla.pie-pagina}]] <a href="https://trailblazer.me/id/pedroivanlarios" target="_blank">Pedro Ivan</a></span>
+            </div>
+            
         </footer>
     </body>
 </html>
